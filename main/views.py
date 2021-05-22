@@ -15,11 +15,10 @@ def index(request):
 
                 wiki = wikipediaapi.Wikipedia('en')
                 wiki_text = wiki.page(wiki_terms).summary
-                answer = ''
 
                 result = settings.BERT_PIPELINE(
                     question=question, context=wiki_text)
-#
+
                 answer = result['answer']
                 prediction_score = result['score']
 
@@ -34,21 +33,22 @@ def index(request):
 
             except:
                 answer = 'There was an error!'
-#                 prediction_score = 0
+                prediction_score = 0
             return render(request, 'main/index.html', {'form': form, 'answer': answer, 'score': prediction_score})
         else:
             form = QuestionForm()
             return render(request, 'main/index.html', {'form': form})
-#
-#
+
+
 def history(request):
     q = Question.objects.all()
     return render(request, 'main/history.html', {'questions': q})
 
 
-# ipython3
+# ipython3 - in terminal
 # from transformers import pipeline
 # b = pipeline('question-answering')
-# text = 'relative asnwer'
-#  q = 'Some questoion?'
-# b(question=q.context=text)
+# text = 'Quantum computing began in the early 1980s.'
+#  q = 'When did Quantum Computing begin?'
+#  b(question=q,context=text)
+# : {'score': 0.5067328214645386, 'start': 31, 'end': 42, 'answer': 'early 1980s'} use Start and END to play with the question and answers
