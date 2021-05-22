@@ -1,5 +1,8 @@
-# *B* idirectional *E* ncoder *R* epresentations from *T* ransformers
+#**B**idirectional **E**ncoder **R**epresentations from **T**ransformers
+
 [BERT](https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html)
+
+
 
 Dependencies:
 
@@ -25,13 +28,14 @@ ipython
 
 [Transformers](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
-##Security
+
+##Security:
 
 [Security concerns for transparency](https://openreview.net/forum?id=7nfCtKep-v)
 
 
 
-Data Input Syntax:
+##BERT Data Input:
 
 IPython 7.22.0 -- An enhanced Interactive Python. Type '?' for help.
 
