@@ -28,3 +28,34 @@ ipython
 ##Security
 
 [Security concerns for transparency](https://openreview.net/forum?id=7nfCtKep-v)
+
+
+
+Data Input Syntax:
+
+IPython 7.22.0 -- An enhanced Interactive Python. Type '?' for help.
+
+In [1]: import wikipediaapi
+
+In [2]: wiki=wikipediaapi.Wikipedia('en')
+
+In [3]: wiki.page('quantum computing')
+Out[3]: quantum computing (id: ??, ns: 0)
+
+In [4]: wiki.page('quantum computing').summary
+Out[4]: 'Quantum computing is the exploitation of collective 
+
+
+Pipeline Setup:
+
+ipython
+
+In [1]: from transformers import pipeline
+In [2]: b = pipeline('question-answering')
+In [3]: text = 'Quantum computing began in the early 1980s.'
+In [4]: q = 'When did Quantum Computing begin?'
+In [5]: b(question=q,context=text)
+Out[6]: {'score': 0.5067328214645386, 'start': 31, 'end': 42, 'answer': 'early 19
+80s'}
+
+
