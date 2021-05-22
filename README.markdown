@@ -4,20 +4,20 @@
 
 
 
-Dependencies:
-
-python 3.8.10
-pip
-bert-api
-wikipedia-api
-django 2.2.23
-tensorflow
-pandas
-matplotlib
-numpy
-transformers
-ipython
-
+##Dependencies:
+  <ul>
+    *python 3.8.10
+    *pip
+    *bert-api
+    *wikipedia-api
+    *django 2.2.23
+    *tensorflow
+    *pandas
+    *matplotlib
+    *numpy
+    *transformers
+    *ipython -_for building up questions and relies
+  </ul>
 ##Documentation
 
 [bert-api](https://pypi.org/project/bert-api/)
@@ -35,26 +35,27 @@ ipython
 
 
 
-##BERT Data Input:
+##BERT Q&A Data Input:
 
-IPython 7.22.0 -- An enhanced Interactive Python. Type '?' for help.
+**IPython** 7.22.0 -- An enhanced Interactive Python. Type '?' for help.
 
-In [1]: import wikipediaapi
+In [1]: *import* **wikipediaapi
 
-In [2]: wiki=wikipediaapi.Wikipedia('en')
+In [2]: wiki=**wikipediaapi**.Wikipedia('en')
 
-In [3]: wiki.page('quantum computing')
-Out[3]: quantum computing (id: ??, ns: 0)
+In [3]: **wiki.page**('quantum computing')
+Out[3]: **quantum computing** (id: ??, ns: 0)
 
 In [4]: wiki.page('quantum computing').summary
 Out[4]: 'Quantum computing is the exploitation of collective 
 
 
-Pipeline Setup:
+##Pipeline Setup:
 
-ipython
+**Ipython** _make sure you venv is running_
 
 In [1]: from transformers import pipeline
+//May take a while to finish.
 In [2]: b = pipeline('question-answering')
 In [3]: text = 'Quantum computing began in the early 1980s.'
 In [4]: q = 'When did Quantum Computing begin?'
