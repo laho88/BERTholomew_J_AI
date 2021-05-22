@@ -1,16 +1,20 @@
 <html>
 
-<head>
-    <title>History of questions/answers</title>
-</head>
+    <head>
+        <title>History of questions/answers</title>
+    </head>
 
-<body>
+    <body>
 
-    {% for q in questions %}
-    <h1>{{q.question}}</h1>
-    <p>Terms: {{q.wiki_terms}}</p>
-    <p>Context: {{q.wiki_text}}</p>
-    <p>Answer: {{q.answer}}</p>
-    <p>Score: {{q.prediction_score}}</p> {% endfor %} </body>
+        {% for q in questions %}
+        <h1>{{q.question}}</h1>
+        <p>Terms: {{q.wiki_terms}}</p>
+        <p>Context: {{q.wiki_text}}</p>
+        <p>Answer: {{q.answer}}</p>
+        <p>Score: {{q.prediction_score}}</p>
+
+        {% endfor %}
+
+    </body>
 
 </html>

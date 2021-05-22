@@ -1,17 +1,17 @@
 <html>
 
-<head>
-    <title>Ask BERTBot</title>
-</head>
+    <head>
+        <title>Ask BERTholomew_J</title>
+    </head>
 
-<body>
-    <form action="{% url 'index' %}" method="post">
-<!--        Tag Bracket      Expression bracket - keeps all inputs inside <p> tags-->
-        {% csrf_token %} {{ form.as_p }}
-        <input type="submit" value="Submit">
-    </form>
-    <p> The answer is: {{ answer }}. </p>
-    <p> The prediction score is: {{ score }}.</p>
-</body>
+    <body>
+        <form action="{% url 'index' %}" method="post">
+    <!--        Tag Bracket      Expression bracket - keeps all inputs inside <p> tags-->
+            {% csrf_token %} {{ form.as_p }}
+            <input type="submit" value="Submit">
+        </form>
+        <p> The answer is: {{ answer }}. </p>
+        <p> The prediction score is: {{ score }}.</p>
+    </body>
 
 </html>

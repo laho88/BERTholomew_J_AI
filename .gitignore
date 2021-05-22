@@ -1,0 +1,24 @@
+#Ignore:
+
+# System cruft
+.DS_Store
+
+# IDE files
+.idea/
+
+# Compiled Python file(s)
+*.pyc
+
+# Database file(s)
+*.db
+*.sqlite
+*.sqlite3
+
+# Secret(s)
+*secret*
+
+# Python environment
+/BERTholomew_J_VENV
+
+# Local settings file(s)
+local_settings.py
