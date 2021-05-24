@@ -5,19 +5,23 @@
 
 
 ##Dependencies:
+
+
   <ul>
-    *python 3.8.10
-    *pip
-    *bert-api
-    *wikipedia-api
-    *django 2.2.23
-    *tensorflow
-    *pandas
-    *matplotlib
-    *numpy
-    *transformers
-    *ipython -_for building up questions and relies
+    -python 3.8.10
+    -pip
+    -bert-api
+    -wikipedia-api
+    -django 2.2.23
+    -tensorflow
+    -pandas
+    -matplotlib
+    -numpy
+    -transformers
+    -ipython -_for building up questions and relies
   </ul>
+  
+  
 ##Documentation
 
 [bert-api](https://pypi.org/project/bert-api/)
@@ -52,8 +56,9 @@ Out[4]: 'Quantum computing is the exploitation of collective
 
 ##Pipeline Setup:
 
-**Ipython** _make sure you venv is running_
+**Ipython** _make sure you venv is running
 
+```
 In [1]: from transformers import pipeline
 //May take a while to finish.
 In [2]: b = pipeline('question-answering')
@@ -62,5 +67,5 @@ In [4]: q = 'When did Quantum Computing begin?'
 In [5]: b(question=q,context=text)
 Out[6]: {'score': 0.5067328214645386, 'start': 31, 'end': 42, 'answer': 'early 19
 80s'}
-
+```
 
