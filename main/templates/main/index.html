@@ -6,7 +6,7 @@
 
     <body>
         <form action="{% url 'index' %}" method="post">
-    <!--        Tag Bracket      Expression bracket - keeps all inputs inside <p> tags-->
+    <!-- 'as_p' keeps all inputs inside <p> tags. Taking advantage of the display:block property when rendering-->
             {% csrf_token %} {{ form.as_p }}
             <input type="submit" value="Submit">
         </form>
