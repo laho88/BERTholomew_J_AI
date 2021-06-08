@@ -1,28 +1,23 @@
-#**B**idirectional **E**ncoder **R**epresentations from **T**ransformers
+# BERT
+**B**idirectional **E**ncoder **R**epresentations from **T**ransformers
 
-[BERT](https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html)
+[BERT from Google](https://ai.googleblog.com/2018/11/open-sourcing-bert-state-of-art-pre.html)
 
+## Dependencies:
 
+- python 3.8.10
+- pip
+- bert-api
+- wikipedia-api
+- django 2.2.23
+- tensorflow
+- pandas
+- matplotlib
+- numpy
+- transformers
+- ipython - _for building up questions and replies_
 
-##Dependencies:
-
-
-  <ul>
-    -python 3.8.10
-    -pip
-    -bert-api
-    -wikipedia-api
-    -django 2.2.23
-    -tensorflow
-    -pandas
-    -matplotlib
-    -numpy
-    -transformers
-    -ipython -_for building up questions and relies
-  </ul>
-  
-  
-##Documentation
+## Documentation
 
 [bert-api](https://pypi.org/project/bert-api/)
 
@@ -33,13 +28,13 @@
 [Transformers](https://ai.googleblog.com/2017/08/transformer-novel-neural-network.html)
 
 
-##Security:
+## Security:
 
 [Security concerns for transparency](https://openreview.net/forum?id=7nfCtKep-v)
 
 
 
-##BERT Q&A Data Input:
+## BERT Q&A Data Input:
 
 **IPython** 7.22.0 -- An enhanced Interactive Python. Type '?' for help.
 
@@ -54,7 +49,7 @@ In [4]: wiki.page('quantum computing').summary
 Out[4]: 'Quantum computing is the exploitation of collective 
 
 
-##Pipeline Setup:
+## Pipeline Setup:
 
 **Ipython** _make sure you venv is running
 
